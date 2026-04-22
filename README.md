@@ -58,10 +58,15 @@ Ultrasonic Sensor → STM32 Nucleo-F401RE → L298N Motor Driver → Motors
 
 ## 📂 Repository Structure
 pixel/
+
 ├── docs/ # system design and documentation
+
 ├── firmware/ # STM32 firmware (in progress)
+
 ├── hardware/ # wiring diagrams (in progress)
+
 ├── BOM.xlsx # bill of materials
+
 └── README.md
 
 
