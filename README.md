@@ -81,7 +81,7 @@ pixel/
 ## 🏁 Status
 
 - ✅ Planning and system design
-- ⬜ Hardware assembly
+- 🟡 Hardware assembly
 - ⬜ Firmware implementation
 - ⬜ Integration and testing
 
