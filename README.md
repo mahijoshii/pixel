@@ -20,10 +20,10 @@ The goal is to demonstrate **embedded systems design, real-time control, and har
 ## 🧠 System Architecture
 
 ```text
-Ultrasonic Sensor → STM32 Nucleo-F401RE → L298N Motor Driver → Motors
-                                          ↑
-                                       Battery
-```text
+Ultrasonic Sensor ──> STM32 Nucleo-F401RE ──> L298N Motor Driver ──> Motors
+                                  │
+                                  └── External Battery Power
+```
 
 ---
 
@@ -45,7 +45,7 @@ Ultrasonic Sensor → STM32 Nucleo-F401RE → L298N Motor Driver → Motors
 - 2× DC gear motors + wheels
 - External battery pack
 - Breadboard and jumper wires
-- Chassis (or custom base)
+- Chassis or custom base
 
 ---
 
@@ -62,37 +62,37 @@ Ultrasonic Sensor → STM32 Nucleo-F401RE → L298N Motor Driver → Motors
 
 ```text
 pixel/
-├── docs/              # system design and documentation
-├── firmware/          # STM32 firmware (in progress)
-├── hardware/          # wiring diagrams (in progress)
-├── BOM.xlsx           # bill of materials
+├── docs/        # system design and documentation
+├── firmware/    # STM32 firmware
+├── hardware/    # wiring diagrams and hardware notes
+├── BOM.xlsx     # bill of materials
 └── README.md
-
+```
 
 ---
 
 ## 📚 Documentation
 
 - System Design: `docs/system_design.md`
-- BOM (Bill of Materials): `BOM.xlsx`
+- BOM: `BOM.xlsx`
 
 ---
 
 ## 🏁 Status
 
-🟡 Planning & system design  
-⬜ Hardware assembly  
-⬜ Firmware implementation  
-⬜ Integration & testing  
+- ✅ Planning and system design
+- ⬜ Hardware assembly
+- ⬜ Firmware implementation
+- ⬜ Integration and testing
 
 ---
 
 ## 🔧 Next Steps
 
-- finalize hardware wiring and power setup  
-- implement PWM motor control  
-- implement ultrasonic distance measurement  
-- integrate real-time control loop  
+- finalize hardware wiring and power setup
+- implement PWM motor control
+- implement ultrasonic distance measurement
+- integrate real-time control loop
 
 ---
 
@@ -101,19 +101,20 @@ pixel/
 This project demonstrates:
 - embedded systems development using STM32
 - real-time control loop design
-- sensor → decision → actuation pipelines
+- sensor-to-decision-to-actuation pipelines
 - hardware/software integration and debugging
 
 ---
 
 ## 🧠 Future Improvements
 
-- PID control for smoother navigation  
-- wheel encoders for closed-loop control  
-- Bluetooth or wireless control interface  
-- multi-sensor fusion  
+- PID control for smoother navigation
+- wheel encoders for closed-loop control
+- Bluetooth or wireless control interface
+- multi-sensor fusion
 
 ---
 
 ## 👤 Author
+
 Built by Mahi Joshi
