@@ -23,7 +23,7 @@ The goal is to demonstrate **embedded systems design, real-time control, and har
 Ultrasonic Sensor → STM32 Nucleo-F401RE → L298N Motor Driver → Motors
                                           ↑
                                        Battery
-
+```text
 
 ---
 
