@@ -57,7 +57,7 @@ Ultrasonic Sensor → STM32 Nucleo-F401RE → L298N Motor Driver → Motors
 - GPIO and timing logic for sensor interfacing
 
 ---
-```md
+
 ## 📂 Repository Structure
 
 ```text
