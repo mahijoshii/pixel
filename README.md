@@ -34,6 +34,7 @@ Ultrasonic Sensor ──> STM32 Nucleo-F401RE ──> L298N Motor Driver ──>
 - Real-time distance measurement with ultrasonic sensing
 - Autonomous obstacle avoidance behavior
 - Clean separation between hardware and software components
+- LCD-based debugging interface for real-time system feedback
 
 ---
 
@@ -45,6 +46,8 @@ Ultrasonic Sensor ──> STM32 Nucleo-F401RE ──> L298N Motor Driver ──>
 - 2× DC gear motors + wheels
 - External battery pack
 - Breadboard and jumper wires
+- 16×2 LCD display (parallel interface)
+- Potentiometer (contrast control)
 - Chassis or custom base
 
 ---
@@ -52,6 +55,7 @@ Ultrasonic Sensor ──> STM32 Nucleo-F401RE ──> L298N Motor Driver ──>
 ## 💻 Software
 
 - STM32CubeIDE (HAL-based development)
+- Arduino IDE (for rapid prototyping and hardware validation)
 - Embedded C
 - Timer peripherals for PWM generation
 - GPIO and timing logic for sensor interfacing
@@ -74,26 +78,33 @@ pixel/
 ## 📚 Documentation
 
 - System Design: `docs/system_design.md`
+- Wiring Plan: `hardware/wiring_plan.md`
 - BOM: `BOM.xlsx`
 
 ---
 
+## Latest Progress
+- ✅ Successfully interfaced 16×2 LCD with STM32 using parallel communication
+- ✅ Implemented real-time display output ("Hello Pixel")
+- ✅ Verified GPIO control and hardware wiring
+- 🔄 Transitioning from prototyping (Arduino) to STM32 HAL-based firmware
+
 ## 🏁 Status
 
 - ✅ Planning and system design
-- 🟡 Hardware assembly
-- ⬜ Firmware implementation
-- ⬜ Integration and testing
+- 🟡 Hardware bring-up (in progress)
+- ⬜ Motor control implementation
+- ⬜ Sensor integration (ultrasonic)
+- ⬜ Full system integration
 
 ---
 
 ## 🔧 Next Steps
 
-- finalize hardware wiring and power setup
-- implement PWM motor control
+- integrate L298N motor driver and test PWM motor control
 - implement ultrasonic distance measurement
-- integrate real-time control loop
-
+- integrate LCD as debugging interface (distance + state display)
+- build full obstacle avoidance control loop
 ---
 
 ## 🎯 Why this project matters
@@ -103,6 +114,7 @@ This project demonstrates:
 - real-time control loop design
 - sensor-to-decision-to-actuation pipelines
 - hardware/software integration and debugging
+- low-level hardware interfacing (parallel LCD, GPIO timing)
 
 ---
 
