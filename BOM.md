@@ -57,6 +57,18 @@ This document lists all hardware components required to build **Pixel**, an STM3
 
 ---
 
+---
+
+## 🖥️ Display & Interface
+
+| Component | Quantity | Description | Status |
+|----------|----------|-------------|--------|
+| 16×2 LCD Display (HD44780) | 1 | Debug / output interface | ✅ Owned |
+| Potentiometer (10k) | 1 | Contrast control for LCD | ✅ Owned |
+
+---
+
+
 ## 🧱 Structure
 
 | Component | Quantity | Description | Status |
@@ -70,6 +82,7 @@ This document lists all hardware components required to build **Pixel**, an STM3
 - STM32 operates at **3.3V logic**, while HC-SR04 outputs **5V** → requires voltage divider on ECHO pin  
 - Motors must be powered through the **L298N driver**, not directly from STM32  
 - All components must share a **common ground**
+- LCD display successfully interfaced and tested using STM32 GPIO
 
 ---
 
@@ -90,4 +103,5 @@ This document lists all hardware components required to build **Pixel**, an STM3
 
 - ✅ Core platform ready (STM32)
 - 🟡 Parts selection in progress
+- 🟡 Partial hardware assembled (LCD + wiring validated)
 - ⬜ Hardware assembly pending
