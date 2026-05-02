@@ -4,6 +4,19 @@ This document defines all electrical connections for the STM32 robot.
 
 ---
 
+## LCD Wiring (Implemented)
+
+RS → D7  
+E  → D8  
+D4 → D9  
+D5 → D10  
+D6 → D11  
+D7 → D12  
+RW → GND  
+VO → potentiometer  
+
+---
+
 ## 🧠 STM32 ↔ Motor Driver (L298N)
 
 | STM32 Pin | L298N Pin | Purpose |
@@ -50,9 +63,3 @@ This document defines all electrical connections for the STM32 robot.
 | STM32 USB | STM32 | Logic power |
 
 ---
-
-## ⚠️ Important Notes
-
-- Do NOT power motors from STM32
-- Ensure ALL grounds are connected
-- Use voltage divider for ECHO pin (5V → 3.3V)
